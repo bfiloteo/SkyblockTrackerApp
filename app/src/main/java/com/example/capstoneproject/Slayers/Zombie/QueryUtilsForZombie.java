@@ -24,7 +24,7 @@ public final class QueryUtilsForZombie {
 
     private static final String LOG_TAG = com.example.capstoneproject.Slayers.Zombie.QueryUtilsForZombie.class.getSimpleName();
 
-    private QueryUtilsForZombie() {
+    private QueryUtilsForZombie() { 
     }
 
     public static List<Zombie> fetchStatData(String requestUrl) {
