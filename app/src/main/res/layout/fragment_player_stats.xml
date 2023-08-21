@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/PlayerStatProfile"
+            style="@style/ProfileNameStyle">
+
+        </TextView>
+
+
+
+        <ImageView
+            android:id="@+id/HealthIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/PlayerStatProfile"
+            android:src="@drawable/healthicon">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/Health"
+            style="@style/StatStyle"
+            android:layout_below="@id/HealthIcon"
+            android:text="@string/health">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/DefenseIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/PlayerStatProfile"
+            android:src="@drawable/defenseicon"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Defense"
+            style="@style/StatStyle"
+            android:layout_below="@id/DefenseIcon"
+            android:layout_centerHorizontal="true"
+            android:text="@string/defense">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/SpeedIcon"
+            style="@style/IconStyle"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/PlayerStatProfile"
+            android:src="@drawable/speedicon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Speed"
+            style="@style/StatStyle"
+            android:layout_below="@id/SpeedIcon"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/PaddingRightForPlayerStats"
+            android:text="@string/speed">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/StrengthIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/Health"
+            android:src="@drawable/strengthicon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Strength"
+            style="@style/StatStyle"
+            android:layout_below="@id/StrengthIcon"
+            android:text="@string/strength">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/CritChanceIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/Defense"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/critchanceicon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/CritChance"
+            style="@style/StatStyle"
+            android:layout_below="@id/CritChanceIcon"
+            android:layout_centerHorizontal="true"
+            android:text="@string/critchance">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/CritDamageIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/Speed"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/critdamageicon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/CritDamage"
+            style="@style/StatStyle"
+            android:layout_below="@id/CritDamageIcon"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/PaddingRightForPlayerStats"
+            android:text="@string/critdamage">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/IntelligenceIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/Strength"
+            android:src="@drawable/intelligenceicon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Intelligence"
+            style="@style/StatStyle"
+            android:layout_below="@id/IntelligenceIcon"
+            android:text="@string/intelligence">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/MagicFindIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/CritChance"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/magicfindicon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/MagicFind"
+            style="@style/StatStyle"
+            android:layout_below="@id/MagicFindIcon"
+            android:layout_centerHorizontal="true"
+            android:text="@string/magicfind">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/FerocityIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/CritDamage"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ferocityicon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Ferocity"
+            style="@style/StatStyle"
+            android:layout_below="@id/FerocityIcon"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/PaddingRightForPlayerStats"
+            android:text="@string/ferocity">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/SeaCreatureChanceIcon"
+            style="@style/IconStyle"
+            android:layout_below="@id/Intelligence"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="16dp"
+            android:src="@drawable/seacreaturechanceicon">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/SeaCreatureChance"
+            style="@style/StatStyle"
+            android:layout_below="@id/SeaCreatureChanceIcon"
+            android:layout_centerHorizontal="true"
+            android:text="@string/seacreaturechance">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</ScrollView>

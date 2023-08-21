@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ProfileSkills"
+            style="@style/ProfileNameStyle">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/FarmingTitle"
+                style="@style/SkillTitle"
+                android:text="@string/farming">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/FarmingLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentFarmingExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/FarmingLevel" />
+
+            <TextView
+                android:id="@+id/NeededFarmingExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentFarmingExp" />
+
+            <ImageView
+                android:id="@+id/FarmingIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/farmingicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/MiningTitle"
+                style="@style/SkillTitle"
+                android:text="@string/mining">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/MiningLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentMiningExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/MiningLevel" />
+
+            <TextView
+                android:id="@+id/NeededMiningExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentMiningExp" />
+
+            <ImageView
+                android:id="@+id/MiningIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/miningicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/CombatTitle"
+                style="@style/SkillTitle"
+                android:text="@string/combat">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/CombatLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentCombatExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/CombatLevel" />
+
+            <TextView
+                android:id="@+id/NeededCombatExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentCombatExp" />
+
+            <ImageView
+                android:id="@+id/CombatIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/combaticon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/ForagingTitle"
+                style="@style/SkillTitle"
+                android:text="@string/foraging">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/ForagingLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentForagingExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/ForagingLevel" />
+
+            <TextView
+                android:id="@+id/NeededForagingExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentForagingExp" />
+
+            <ImageView
+                android:id="@+id/ForagingIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/foragingicon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/FishingTitle"
+                style="@style/SkillTitle"
+                android:text="@string/fishing">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/FishingLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentFishingExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/FishingLevel" />
+
+            <TextView
+                android:id="@+id/NeededFishingExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentFishingExp" />
+
+            <ImageView
+                android:id="@+id/FishingIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/fishingicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/EnchantingTitle"
+                style="@style/SkillTitle"
+                android:text="@string/enchanting">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/EnchantingLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentEnchantingExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/EnchantingLevel" />
+
+            <TextView
+                android:id="@+id/NeededEnchantingExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentEnchantingExp" />
+
+            <ImageView
+                android:id="@+id/EnchantingIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/enchantingicon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/AlchemyTitle"
+                style="@style/SkillTitle"
+                android:text="@string/alchemy">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/AlchemyLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentAlchemyExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/AlchemyLevel" />
+
+            <TextView
+                android:id="@+id/NeededAlchemyExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentAlchemyExp" />
+
+            <ImageView
+                android:id="@+id/AlchemyIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/alchemyicon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/TamingTitle"
+                style="@style/SkillTitle"
+                android:text="@string/taming">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TamingLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentTamingExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/TamingLevel" />
+
+            <TextView
+                android:id="@+id/NeededTamingExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentTamingExp" />
+
+            <ImageView
+                android:id="@+id/TamingIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/tamingicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/CarpentryTitle"
+                style="@style/SkillTitle"
+                android:text="@string/carpentry">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/CarpentryLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentCarpentryExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/CarpentryLevel" />
+
+            <TextView
+                android:id="@+id/NeededCarpentryExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentCarpentryExp" />
+
+            <ImageView
+                android:id="@+id/CarpentryIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/carpentryicon" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/RunecraftingTitle"
+                style="@style/SkillTitle"
+                android:text="@string/runecrafting">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/RunecraftingLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentRunecraftingExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/RunecraftingLevel" />
+
+            <TextView
+                android:id="@+id/NeededRunecraftingExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentRunecraftingExp" />
+
+            <ImageView
+                android:id="@+id/RunecraftingIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/runecraftingicon" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

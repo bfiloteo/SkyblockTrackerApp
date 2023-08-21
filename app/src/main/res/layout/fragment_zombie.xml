@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/ZombieProfileName"
+            style="@style/ProfileNameStyle">
+
+        </TextView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/ZombieSlayerTitle"
+                style="@style/SlayerName"
+                android:text="@string/zombie_slayer_title">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/ZombieLevel"
+                style="@style/SkillLevel"
+                android:text="@string/slayer_level" />
+
+            <TextView
+                android:id="@+id/CurrentZombieExp"
+                style="@style/CurrentSkillExp"
+                android:paddingTop="20dp"
+                android:text="@string/current_slayer_exp"
+                android:layout_below="@id/ZombieLevel" />
+
+            <TextView
+                android:id="@+id/NeededZombieExp"
+                style="@style/NeededSkillExp"
+                android:text="@string/needed_slayer_exp"
+                android:layout_below="@id/CurrentZombieExp"/>
+
+            <TextView
+                android:id="@+id/CoinsSpentOnZombies"
+                style="@style/CoinsSpentOnSlayers"
+                android:text="@string/coins_spent_on_slayers"
+                android:layout_below="@id/NeededZombieExp"/>
+
+            <TextView
+                android:id="@+id/TierOneZombieTitle"
+                style="@style/TierOneSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnZombies"/>
+
+            <TextView
+                android:id="@+id/TierOneZombieKills"
+                style="@style/SlayerKilledTierOneNumber"
+                android:layout_below="@id/TierOneZombieTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierTwoZombieTitle"
+                style="@style/TierTwoSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnZombies"
+                android:layout_toRightOf="@id/TierOneZombieTitle"/>
+
+            <TextView
+                android:id="@+id/TierTwoZombieKills"
+                style="@style/SlayerKilledTierTwoNumber"
+                android:layout_below="@id/TierTwoZombieTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierThreeZombieTitle"
+                style="@style/TierThreeSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnZombies" />
+
+            <TextView
+                android:id="@+id/TierThreeZombieKills"
+                style="@style/SlayerKilledTierThreeNumber"
+                android:layout_below="@id/TierThreeZombieTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierFourZombieTitle"
+                style="@style/TierFourZombieKillsTitle"
+                android:layout_below="@id/TierTwoZombieKills" />
+
+            <TextView
+                android:id="@+id/TierFourZombieKills"
+                style="@style/ZombieKilledTierFourNumber"
+                android:layout_below="@id/TierFourZombieTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierFiveZombieTitle"
+                style="@style/TierFiveZombieKillsTitle"
+                android:layout_below="@id/TierTwoZombieKills" />
+
+            <TextView
+                android:id="@+id/TierFiveZombieKills"
+                style="@style/ZombieKilledTierFiveNumber"
+                android:layout_below="@id/TierFourZombieTitle">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ZombieIcon"
+                style="@style/ZombieSlayerIcon"
+                android:src="@drawable/zombieicon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

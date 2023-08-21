@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/MasterModeProfileName"
+            style="@style/ProfileNameStyle">
+        </TextView>
+
+        <TextView
+            android:id="@+id/NoStatsFound"
+            style="@style/NoDataFound">
+        </TextView>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/MasterModeFloorOneLayout">
+
+            <TextView
+                android:id="@+id/MasterModeFloorOneTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_one">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/MasterModeFloorOneTimesCompletedTitle"
+                style="@style/MasterModeTimesCompletedTitle" />
+
+            <TextView
+                android:id="@+id/MasterModeFloorOneTimesCompletedNumber"
+                android:layout_below="@id/MasterModeFloorOneTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorOneIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/flooroneicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/MasterModeFloorTwoLayout">
+
+            <TextView
+                android:id="@+id/MasterModeFloorTwoTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_two">
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/MasterModeFloorTwoTimesCompletedTitle"
+                style="@style/MasterModeTimesCompletedTitle" />
+
+            <TextView
+                android:id="@+id/MasterModeFloorTwoTimesCompletedNumber"
+                android:layout_below="@id/MasterModeFloorTwoTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorTwoIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/floortwoicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/MasterModeFloorThreeLayout">
+
+            <TextView
+                android:id="@+id/MasterModeFloorThreeTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_three">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/MasterModeFloorThreeTimesCompletedTitle"
+                style="@style/MasterModeTimesCompletedTitle" />
+
+            <TextView
+                android:id="@+id/MasterModeFloorThreeTimesCompletedNumber"
+                android:layout_below="@id/MasterModeFloorThreeTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorThreeIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/floorthreeicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/MasterModeFloorFourLayout">
+
+            <TextView
+                android:id="@+id/MasterModeFloorFourTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_four"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/MasterModeFloorFourTimesCompletedTitle"
+                style="@style/MasterModeTimesCompletedTitle"/>
+            <TextView
+                android:id="@+id/MasterModeFloorFourTimesCompletedNumber"
+                android:layout_below="@id/MasterModeFloorFourTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorFourIcon"
+                style="@style/FloorFourAndSevenIcon"
+                android:src="@drawable/floorfouricon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/MasterModeFloorFiveLayout">
+
+            <TextView
+                android:id="@+id/MasterModeFloorFiveTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_five">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/MasterModeFloorFiveTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"/>
+
+            <TextView
+                android:id="@+id/MasterModeFloorFiveTimesCompletedNumber"
+                android:layout_below="@id/MasterModeFloorFiveTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorFiveIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/floorfiveicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/MasterModeFloorSixLayout">
+
+            <TextView
+                android:id="@+id/MasterModeFloorSixTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_six">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/MasterModeFloorSixTimesCompletedTitle"
+                style="@style/MasterModeTimesCompletedTitle"/>
+
+            <TextView
+                android:id="@+id/MasterModeFloorSixTimesCompletedNumber"
+                android:layout_below="@id/MasterModeFloorSixTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorSixIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/floorsixicon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

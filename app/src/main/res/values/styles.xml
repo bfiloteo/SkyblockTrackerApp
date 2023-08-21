@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+        <item name="tabBackground">@color/primary_color</item>
+    </style>
+
+
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="InputUserName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:hint">@string/enter_username</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="SubmitButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/Submit</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <style name="ProfileStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ProfileStyleSize</item>
+        <item name="android:layout_margin">@dimen/ProfileStyleMargin</item>
+    </style>
+
+    <style name="DungeonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ProfileStyleSize</item>
+        <item name="android:layout_below">@id/ProfileStats</item>
+        <item name="android:layout_margin">@dimen/ProfileStyleMargin</item>
+    </style>
+
+    <style name="SlayerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/ProfileStyleSize</item>
+        <item name="android:layout_below">@id/DungeonStats</item>
+        <item name="android:layout_margin">@dimen/ProfileStyleMargin</item>
+    </style>
+
+    <style name="BackToSecondActivity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ButtonHeightDimen</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/back_to_second_activity</item>
+    </style>
+
+    <style name="ProfileNameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/profile</item>
+        <item name="android:textSize">@dimen/ProfileTextSize</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NoDataFound">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">@string/no_dungeon_data_found</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="ClassTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/SkillTitleTextSize</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="ClassLevel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/paddingTopForSlayerLevel</item>
+        <item name="android:text">@string/class_level</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CurrentClassExp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/current_class_exp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NeededClassExp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/needed_class_exp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="IconStyle">
+        <item name="android:layout_width">@dimen/IconHeightAndWidth</item>
+        <item name="android:layout_height">@dimen/IconHeightAndWidth</item>
+        <item name="android:paddingTop">@dimen/paddingLeft</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StatStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/eightdp</item>
+        <item name="android:paddingTop">@dimen/paddingLeft</item>
+        <item name="android:textSize">@dimen/slayer_killed_title_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:color">@color/white</item>
+    </style>
+
+    <style name="SkillTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/SkillTitleTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SkillName">
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SkillLevel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/paddingTopForSlayerLevel</item>
+        <item name="android:text">@string/level</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CurrentSkillExp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/current_exp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NeededSkillExp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:paddingBottom">@dimen/paddingBottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/needed_exp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="SkillIcon">
+        <item name="android:layout_width">@dimen/ImageWidthDimens</item>
+        <item name="android:layout_height">@dimen/ImageHeightDimens</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FloorTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/SkillTitleTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="TimesAttemptedTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTopForMasterModeCompletedTitle</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textSize">@dimen/TimesAttemptedAndCompletedSize</item>
+        <item name="android:text">@string/times_attempted</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TimesCompletedTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTopForBossIcon</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textSize">@dimen/TimesAttemptedAndCompletedSize</item>
+        <item name="android:text">@string/times_completed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MasterModeTimesCompletedTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTopForMasterModeCompletionTitleTwo</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textSize">@dimen/TimesAttemptedAndCompletedSize</item>
+        <item name="android:text">@string/times_completed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="TimesAttemptedNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/paddingLeftForTimesAttemptedNumber</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:textSize">@dimen/TimesAttemptedAndCompletedNumberSize</item>
+        <item name="android:text">@string/number</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TimesCompletedNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/paddingLeftForTimesAttemptedNumber</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:textSize">@dimen/TimesAttemptedAndCompletedNumberSize</item>
+        <item name="android:text">@string/number</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="DungeonBossIcon">
+        <item name="android:layout_width">@dimen/BossWidthDimens</item>
+        <item name="android:layout_height">@dimen/BossHeightDimens</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:paddingTop">@dimen/paddingTopForBossIcon</item>
+        <item name="android:paddingRight">@dimen/paddingRightForDungeonIcon</item>
+    </style>
+
+    <style name="FloorFourAndSevenIcon">
+        <item name="android:layout_width">@dimen/FloorFourAndSevenWidthDimens</item>
+        <item name="android:layout_height">@dimen/FloorFourAndSevenHeightDimens</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:paddingTop">@dimen/paddingTopForFloorFourandFloorSevenIcon</item>
+    </style>
+
+    <style name="SlayerName">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/SkillTitleTextSize</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SlayerLevel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/paddingTopForSlayerLevel</item>
+        <item name="android:text">@string/slayer_level</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CurrentSlayerExp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/current_slayer_exp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NeededSlayerExp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeftForNumber</item>
+        <item name="android:paddingBottom">@dimen/paddingBottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/needed_slayer_exp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TierOneSlayerKillsTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeftForSlayerTierOneTitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/tier_one_kills</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TierTwoSlayerKillsTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/tier_two_kills</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TierThreeSlayerKillsTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingRight">@dimen/paddingRightForSlayerTierThreeTitle</item>
+        <item name="android:text">@string/tier_three_kills</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TierFourSlayerKillsTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/tier_four_kills</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TierFourZombieKillsTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeftForSlayerTierFourTitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/tier_four_kills</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TierFiveZombieKillsTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">@dimen/paddingRightForTierFive</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/tier_five_kills</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+<style name="SlayerKilledTierOneNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/paddingLeftForNumber</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:textSize">@dimen/slayer_killed_title_size</item>
+        <item name="android:text">@string/number</item>
+        <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SlayerKilledTierTwoNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:textSize">@dimen/slayer_killed_title_size</item>
+        <item name="android:text">@string/number</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SlayerKilledTierThreeNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:textSize">@dimen/slayer_killed_title_size</item>
+        <item name="android:text">@string/number</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">@dimen/paddingRight</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SlayerKilledTierFourNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/paddingTopForSlayerTierNumber</item>
+        <item name="android:textSize">@dimen/slayerkilledtiernumbersize</item>
+        <item name="android:text">@string/number</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ZombieKilledTierFourNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/ImageWidthDimens</item>
+        <item name="android:paddingTop">@dimen/paddingTopForSlayerTierNumber</item>
+        <item name="android:textSize">@dimen/slayerkilledtiernumbersize</item>
+        <item name="android:text">@string/number</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ZombieKilledTierFiveNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTopForSlayerTierNumber</item>
+        <item name="android:textSize">@dimen/slayerkilledtiernumbersize</item>
+        <item name="android:text">@string/number</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">@dimen/SlayerIconWidthAndHeightSize</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CoinsSpentOnSlayers">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/coins_spent_on_slayers</item>
+    </style>
+
+
+    <style name="SlayerIcon">
+        <item name="android:layout_width">@dimen/SlayerIconWidthAndHeightSize</item>
+        <item name="android:layout_height">@dimen/SlayerIconWidthAndHeightSize</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:paddingTop">@dimen/paddingTopForSlayerIcon</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ZombieSlayerIcon">
+        <item name="android:layout_width">@dimen/zombieslayericonwidth</item>
+        <item name="android:layout_height">@dimen/zombieslayericonheight</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:paddingTop">@dimen/paddingTopForSlayerIcon</item>
+        <item name="android:paddingRight">@dimen/eightdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/SpiderProfileName"
+            style="@style/ProfileNameStyle">
+
+        </TextView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/SpiderSlayerTitle"
+                style="@style/ProfileNameStyle"
+                android:text="@string/spider_slayer_title">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/SpiderLevel"
+                style="@style/SlayerLevel" />
+
+            <TextView
+                android:id="@+id/CurrentSpiderExp"
+                style="@style/CurrentSlayerExp"
+                android:layout_below="@id/SpiderLevel" />
+
+            <TextView
+                android:id="@+id/NeededSpiderExp"
+                style="@style/NeededSlayerExp"
+                android:layout_below="@id/CurrentSpiderExp"/>
+
+            <TextView
+                android:id="@+id/CoinsSpentOnSpider"
+                style="@style/CoinsSpentOnSlayers"
+                android:layout_below="@id/NeededSpiderExp"/>
+
+            <TextView
+                android:id="@+id/TierOneSpiderTitle"
+                style="@style/TierOneSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnSpider"/>
+
+            <TextView
+                android:id="@+id/TierOneSpiderKills"
+                style="@style/SlayerKilledTierOneNumber"
+                android:layout_below="@id/TierOneSpiderTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierTwoSpiderTitle"
+                style="@style/TierTwoSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnSpider"
+                android:layout_toRightOf="@id/TierOneSpiderTitle"/>
+
+            <TextView
+                android:id="@+id/TierTwoSpiderKills"
+                style="@style/SlayerKilledTierTwoNumber"
+                android:layout_below="@id/TierTwoSpiderTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierThreeSpiderTitle"
+                style="@style/TierThreeSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnSpider" />
+
+            <TextView
+                android:id="@+id/TierThreeSpiderKills"
+                style="@style/SlayerKilledTierThreeNumber"
+                android:layout_below="@id/TierThreeSpiderTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierFourSpiderTitle"
+                style="@style/TierFourSlayerKillsTitle"
+                android:layout_below="@id/TierTwoSpiderKills"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/TierFourSpiderKills"
+                style="@style/SlayerKilledTierFourNumber"
+                android:layout_below="@id/TierFourSpiderTitle">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/SpiderIcon"
+                style="@style/SlayerIcon"
+                android:src="@drawable/spidericon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

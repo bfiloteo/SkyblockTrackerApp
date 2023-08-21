@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/ProfileClass"
+            style="@style/ProfileNameStyle">
+        </TextView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CatacombsLayout"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/CatacombsTitle"
+                style="@style/ClassTitle"
+                android:text="@string/catacombs">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/CatacombsLevel"
+                style="@style/ClassLevel" />
+
+            <TextView
+                android:id="@+id/CurrentCatacombsExp"
+                style="@style/CurrentClassExp"
+                android:layout_below="@id/CatacombsLevel"/>
+
+            <TextView
+                android:id="@+id/NeededCatacombsExp"
+                style="@style/NeededClassExp"
+                android:layout_below="@id/CurrentCatacombsExp"/>
+
+            <ImageView
+                android:id="@+id/CatacombsIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/catacombsicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/ArcherLayout">
+
+            <TextView
+                android:id="@+id/ArcherTitle"
+                style="@style/ClassTitle"
+                android:text="@string/archer">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/ArcherLevel"
+                style="@style/ClassLevel" />
+
+            <TextView
+                android:id="@+id/CurrentArcherExp"
+                style="@style/CurrentClassExp"
+                android:layout_below="@id/ArcherLevel"/>
+
+            <TextView
+                android:id="@+id/NeededArcherExp"
+                style="@style/NeededClassExp"
+                android:layout_below="@id/CurrentArcherExp"/>
+
+            <ImageView
+                android:id="@+id/ArcherIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/archericon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BerserkerLayout"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/BerserkerTitle"
+                style="@style/ClassTitle"
+                android:text="@string/berserker">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/BerserkerLevel"
+                style="@style/ClassLevel"/>
+
+            <TextView
+                android:id="@+id/CurrentBerserkerExp"
+                style="@style/CurrentClassExp"
+                android:layout_below="@id/BerserkerLevel"/>
+
+            <TextView
+                android:id="@+id/NeededBerserkerExp"
+                style="@style/NeededClassExp"
+                android:layout_below="@id/CurrentBerserkerExp" />
+
+            <ImageView
+                android:id="@+id/BerserkerIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/berserkericon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HealerLayout"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/HealerTitle"
+                style="@style/ClassTitle"
+                android:text="@string/healer">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/HealerLevel"
+                style="@style/ClassLevel" />
+
+            <TextView
+                android:id="@+id/CurrentHealerExp"
+                style="@style/CurrentClassExp"
+                android:layout_below="@id/HealerLevel"/>
+
+            <TextView
+                android:id="@+id/NeededHealerExp"
+                style="@style/NeededClassExp"
+                android:layout_below="@id/CurrentHealerExp"/>
+
+            <ImageView
+                android:id="@+id/HealerIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/healericon" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MageLayout"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/MageTitle"
+                style="@style/ClassTitle"
+                android:text="@string/mage">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/MageLevel"
+                style="@style/ClassLevel" />
+
+            <TextView
+                android:id="@+id/CurrentMageExp"
+                style="@style/CurrentClassExp"
+                android:layout_below="@id/MageLevel"/>
+
+            <TextView
+                android:id="@+id/NeededMageExp"
+                style="@style/NeededClassExp"
+                android:layout_below="@id/CurrentMageExp"/>
+
+            <ImageView
+                android:id="@+id/MageIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/mageicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TankLayout"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/TankTitle"
+                style="@style/ClassTitle"
+                android:text="@string/tank">
+            </TextView>
+
+            <TextView
+                android:id="@+id/TankLevel"
+                style="@style/ClassLevel" />
+
+            <TextView
+                android:id="@+id/CurrentTankExp"
+                style="@style/CurrentClassExp"
+                android:layout_below="@id/TankLevel"/>
+
+            <TextView
+                android:id="@+id/NeededTankExp"
+                style="@style/NeededClassExp"
+                android:layout_below="@id/CurrentTankExp"/>
+
+            <ImageView
+                android:id="@+id/TankIcon"
+                style="@style/SkillIcon"
+                android:src="@drawable/tankicon" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

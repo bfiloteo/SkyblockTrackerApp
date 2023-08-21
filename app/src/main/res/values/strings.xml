@@ -1,0 +1,83 @@
+<resources>
+
+    <string name="app_name">Hypixel Skyblock Player Stats Tracker</string>
+    <string name="slayer_activity_title">Slayer Stats Of Player</string>
+    <string name="profile_activity_title">Profile Stats Of Player</string>
+    <string name="dungeon_activity_title">Dungeon Stats Of Player</string>
+    <string name="enter_username">Enter The Username</string>
+    <string name="Submit">Submit</string>
+
+    <string name="no_dungeon_data_found">No Data Found</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="updated">Updated Stats</string>
+    <string name="back_to_second_activity">Back To Second Activity</string>
+
+    <string name="times_attempted">Times Attempted</string>
+    <string name="times_completed">Times Completed</string>
+
+    <string name="entrance">Entrance</string>
+    <string name="floor_one">Floor One</string>
+    <string name="floor_two">Floor Two</string>
+    <string name="floor_three">Floor Three</string>
+    <string name="floor_four">Floor Four</string>
+    <string name="floor_five">Floor Five</string>
+    <string name="floor_six">Floor Six</string>
+    <string name="floor_seven">Floor Seven</string>
+
+    <string name="level">Level: </string>
+    <string name="current_exp">Current Exp: </string>
+    <string name="needed_exp">Needed Exp: </string>
+
+    <string name="class_level">Class Level: </string>
+    <string name="current_class_exp">Current Class Exp: </string>
+    <string name="needed_class_exp">Needed Class Exp: </string>
+
+
+    <string name="profile">Profile</string>
+
+    <string name="no_class_stats">No Class Stats</string>
+    <string name="catacombs">Catacombs</string>
+    <string name="archer">Archer</string>
+    <string name="berserker">Berserker</string>
+    <string name="healer">Healer</string>
+    <string name="mage">Mage</string>
+    <string name="tank">Tank</string>
+
+    <string name="health">Health </string>
+    <string name="defense">Defense </string>
+    <string name="strength">Strength </string>
+    <string name="speed">Speed </string>
+    <string name="critchance">Crit Chance </string>
+    <string name="critdamage">Crit Damage </string>
+    <string name="intelligence">Intelligence </string>
+    <string name="seacreaturechance">Sea Creature Chance </string>
+    <string name="magicfind">Magic Find </string>
+    <string name="ferocity">Ferocity </string>
+
+    <string name="farming">Farming</string>
+    <string name="mining">Mining</string>
+    <string name="combat">Combat</string>
+    <string name="foraging">Foraging</string>
+    <string name="fishing">Fishing</string>
+    <string name="enchanting">Enchanting</string>
+    <string name="alchemy">Alchemy</string>
+    <string name="taming">Taming</string>
+    <string name="carpentry">Carpentry</string>
+    <string name="runecrafting">Runecrafting</string>
+
+    <string name="number">0000</string>
+
+    <string name="slayer_level">Slayer Level: </string>
+    <string name="current_slayer_exp">Current Slayer Exp: </string>
+    <string name="needed_slayer_exp">Needed Slayer Exp:</string>
+    <string name="coins_spent_on_slayers">Coins Spent On Slayer: </string>
+    <string name="tier_one_kills">Tier One Kills</string>
+    <string name="tier_two_kills">Tier Two Kills</string>
+    <string name="tier_three_kills">Tier Three Kills</string>
+    <string name="tier_four_kills">Tier Four Kills</string>
+    <string name="tier_five_kills">Tier Five Kills</string>
+    <string name="zombie_slayer_title">Zombie Slayer</string>
+    <string name="spider_slayer_title">Spider Slayer</string>
+    <string name="wolf_slayer_title">Wolf Slayer</string>
+
+</resources>

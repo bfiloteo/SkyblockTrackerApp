@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/WolfProfileName"
+            style="@style/ProfileNameStyle">
+
+        </TextView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/WolfSlayerTitle"
+                style="@style/SlayerName"
+                android:text="@string/wolf_slayer_title">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/WolfLevel"
+                style="@style/SkillLevel" />
+
+            <TextView
+                android:id="@+id/CurrentWolfExp"
+                style="@style/CurrentSkillExp"
+                android:layout_below="@id/WolfLevel" />
+
+            <TextView
+                android:id="@+id/NeededWolfExp"
+                style="@style/NeededSkillExp"
+                android:layout_below="@id/CurrentWolfExp"/>
+
+            <TextView
+                android:id="@+id/CoinsSpentOnWolves"
+                style="@style/CoinsSpentOnSlayers"
+                android:layout_below="@id/NeededWolfExp"/>
+
+            <TextView
+                android:id="@+id/TierOneWolfTitle"
+                style="@style/TierOneSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnWolves"/>
+
+            <TextView
+                android:id="@+id/TierOneWolfKills"
+                style="@style/SlayerKilledTierOneNumber"
+                android:layout_below="@id/TierOneWolfTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierTwoWolfTitle"
+                style="@style/TierTwoSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnWolves"
+                android:layout_toRightOf="@id/TierOneWolfTitle"/>
+
+            <TextView
+                android:id="@+id/TierTwoWolfKills"
+                style="@style/SlayerKilledTierTwoNumber"
+                android:layout_below="@id/TierTwoWolfTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierThreeWolfTitle"
+                style="@style/TierThreeSlayerKillsTitle"
+                android:layout_below="@id/CoinsSpentOnWolves" />
+
+            <TextView
+                android:id="@+id/TierThreeWolfKills"
+                style="@style/SlayerKilledTierThreeNumber"
+                android:layout_below="@id/TierThreeWolfTitle">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/TierFourWolfTitle"
+                style="@style/TierFourSlayerKillsTitle"
+                android:layout_below="@id/TierTwoWolfKills"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/TierFourWolfKills"
+                style="@style/SlayerKilledTierFourNumber"
+                android:layout_below="@id/TierFourWolfTitle">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/WolfIcon"
+                style="@style/SlayerIcon"
+                android:src="@drawable/wolficon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

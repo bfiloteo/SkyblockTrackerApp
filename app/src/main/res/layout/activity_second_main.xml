@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#273746"
+    tools:context=".SecondMainActivity">
+
+
+
+    <Button
+        android:id="@+id/ProfileStats"
+        style="@style/ProfileStyle"
+        android:background="#9B59B6"
+        android:text="Profile Stats" />
+
+    <Button
+        android:id="@+id/DungeonStats"
+        style="@style/DungeonStyle"
+        android:background="#A93226"
+        android:text="Dungeon Stats"
+        />
+
+
+    <Button
+        android:id="@+id/SlayerStats"
+        style="@style/SlayerStyle"
+        android:background="#2471A3"
+        android:text="Slayer Stats"
+        />
+
+    <Button
+        android:id="@+id/ViewDetailedStats"
+        style="@style/SlayerStyle"
+        android:layout_below="@id/SlayerStats"
+        android:background="#2471A3"
+        android:text="View Detailed Data"
+        android:onClick="ViewDetailedStats"
+        />
+
+
+</RelativeLayout>

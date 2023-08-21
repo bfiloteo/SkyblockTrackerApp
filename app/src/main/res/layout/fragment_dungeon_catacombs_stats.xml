@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/DungeonProfileName"
+            style="@style/ProfileNameStyle">
+        </TextView>
+
+        <TextView
+            android:id="@+id/NoStatsFound"
+            style="@style/NoDataFound">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/EntranceLayout">
+
+            <TextView
+                android:id="@+id/EntranceTitle"
+                style="@style/FloorTitle"
+                android:text="@string/entrance">
+            </TextView>
+
+            <TextView
+                android:id="@+id/EntranceTimesAttemptedTitle"
+                style="@style/TimesAttemptedTitle" />
+
+            <TextView
+                android:id="@+id/EntranceTimesAttempted"
+                style="@style/TimesAttemptedNumber"
+                android:layout_below="@id/EntranceTimesAttemptedTitle">
+            </TextView>
+
+            <TextView
+                android:id="@+id/EntranceTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"
+                android:layout_below="@id/EntranceTimesAttempted"/>
+
+            <TextView
+                android:id="@+id/EntranceTimesCompleted"
+                android:layout_below="@id/EntranceTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/EntranceIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/entranceicon"
+                android:scaleX="-1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/FloorOneLayout">
+
+            <TextView
+                android:id="@+id/FloorOneTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_one"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorOneTimesAttemptedTitle"
+                style="@style/TimesAttemptedTitle" />
+
+            <TextView
+                android:id="@+id/FloorOneTimesAttemptedNumber"
+                style="@style/TimesAttemptedNumber"
+                android:layout_below="@id/FloorOneTimesAttemptedTitle">
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorOneTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"
+                android:layout_below="@id/FloorOneTimesAttemptedNumber"/>
+
+            <TextView
+                android:id="@+id/FloorOneTimesCompletedNumber"
+                android:layout_below="@id/FloorOneTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorOneIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/flooroneicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/FloorTwoLayout">
+
+            <TextView
+                android:id="@+id/FloorTwoTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_two">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorTwoTimesAttemptedTitle"
+                style="@style/TimesAttemptedTitle" />
+
+            <TextView
+                android:id="@+id/FloorTwoTimesAttemptedNumber"
+                style="@style/TimesAttemptedNumber"
+                android:layout_below="@id/FloorTwoTimesAttemptedTitle">
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorTwoTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"
+                android:layout_below="@id/FloorTwoTimesAttemptedNumber"/>
+
+            <TextView
+                android:id="@+id/FloorTwoTimesCompletedNumber"
+                android:layout_below="@id/FloorTwoTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorTwoIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/floortwoicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/FloorThreeLayout">
+
+            <TextView
+                android:id="@+id/FloorThreeTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_three"
+                android:textSize="25sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorThreeTimesAttemptedTitle"
+                style="@style/TimesAttemptedTitle"/>
+            <TextView
+                android:id="@+id/FloorThreeTimesAttemptedNumber"
+                style="@style/TimesAttemptedNumber"
+                android:layout_below="@id/FloorThreeTimesAttemptedTitle">
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorThreeTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"
+                android:layout_below="@id/FloorThreeTimesAttemptedNumber"/>
+
+            <TextView
+                android:id="@+id/FloorThreeTimesCompletedNumber"
+                android:layout_below="@id/FloorThreeTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorThreeIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/floorthreeicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/FloorFourLayout">
+
+            <TextView
+                android:id="@+id/FloorFourTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_four"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorFourTimesAttemptedTitle"
+                style="@style/TimesAttemptedTitle" />
+
+            <TextView
+                android:id="@+id/FloorFourTimesAttemptedNumber"
+                style="@style/TimesAttemptedNumber"
+                android:layout_below="@id/FloorFourTimesAttemptedTitle">
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorFourTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"
+                android:layout_below="@id/FloorFourTimesAttemptedNumber"/>
+
+            <TextView
+                android:id="@+id/FloorFourTimesCompletedNumber"
+                android:layout_below="@id/FloorFourTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorFourIcon"
+                style="@style/FloorFourAndSevenIcon"
+                android:src="@drawable/floorfouricon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/FloorFiveLayout">
+
+            <TextView
+                android:id="@+id/FloorFiveTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_five"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorFiveTimesAttemptedTitle"
+                style="@style/TimesAttemptedTitle"/>
+
+            <TextView
+                android:id="@+id/FloorFiveTimesAttemptedNumber"
+                style="@style/TimesAttemptedNumber"
+                android:layout_below="@id/FloorFiveTimesAttemptedTitle">
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorFiveTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"
+                android:layout_below="@id/FloorFiveTimesAttemptedNumber"/>
+
+            <TextView
+                android:id="@+id/FloorFiveTimesCompletedNumber"
+                android:layout_below="@id/FloorFiveTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorFiveIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/floorfiveicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/FloorSixLayout">
+
+            <TextView
+                android:id="@+id/FloorSixTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_six">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorSixTimesAttemptedTitle"
+                style="@style/TimesAttemptedTitle" />
+
+            <TextView
+                android:id="@+id/FloorSixTimesAttemptedNumber"
+                style="@style/TimesAttemptedNumber"
+                android:layout_below="@id/FloorSixTimesAttemptedTitle">
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorSixTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"
+                android:layout_below="@id/FloorSixTimesAttemptedNumber"/>
+
+            <TextView
+                android:id="@+id/FloorSixTimesCompletedNumber"
+                android:layout_below="@id/FloorSixTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorSixIcon"
+                style="@style/DungeonBossIcon"
+                android:src="@drawable/floorsixicon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:id="@+id/FloorSevenLayout">
+
+            <TextView
+                android:id="@+id/FloorSevenTitle"
+                style="@style/FloorTitle"
+                android:text="@string/floor_seven">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorSevenTimesAttemptedTitle"
+                style="@style/TimesAttemptedTitle" />
+
+            <TextView
+                android:id="@+id/FloorSevenTimesAttemptedNumber"
+                style="@style/TimesAttemptedNumber"
+                android:layout_below="@id/FloorSevenTimesAttemptedTitle">
+            </TextView>
+
+            <TextView
+                android:id="@+id/FloorSevenTimesCompletedTitle"
+                style="@style/TimesCompletedTitle"
+                android:layout_below="@id/FloorSevenTimesAttemptedNumber"/>
+
+            <TextView
+                android:id="@+id/FloorSevenTimesCompletedNumber"
+                android:layout_below="@id/FloorSevenTimesCompletedTitle"
+                style="@style/TimesCompletedNumber">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/FloorSevenIcon"
+                style="@style/FloorFourAndSevenIcon"
+                android:src="@drawable/floorsevenicon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
